@@ -1,0 +1,383 @@
+{
+  "goods": [
+    {
+      "id": 1,
+      "typeId": 1,
+      "DateOfIncome": "01.01.2021",
+      "StorekeeperId": 2,
+      "OwnerId": 2,
+      "LocationId": 2
+    },
+    {
+      "id": 2,
+      "typeId": 1,
+      "DateOfIncome": "01.01.2021",
+      "StorekeeperId": 1,
+      "OwnerId": 1,
+      "LocationId": 1
+    },
+    {
+      "id": 2,
+      "typeId": 3,
+      "DateOfIncome": "01.01.2021",
+      "StorekeeperId": 2,
+      "OwnerId": 3,
+      "LocationId": 3
+    }
+  ],
+  "typesOfGoods": [
+    {
+      "id": 1,
+      "Type": "perishable"
+    },
+    {
+      "id": 2,
+      "Type": "nonperishable"
+    }
+  ],
+  "storekeeper": [
+    {
+      "id": 1,
+      "NameOfStorekeeper": "A",
+      "DateOfTheEmployment": "01.01.2021",
+      "MontNScheduleId": 1,
+      "salary": 200
+    },
+    {
+      "id": 2,
+      "NameOfStorekeeper": "B",
+      "DateOfTheEmployment": "01.01.2021",
+      "MontNScheduleId": 2,
+      "salary": 300
+    },
+    {
+      "id": 3,
+      "NameOfStorekeeper": "C",
+      "DateOfTheEmployment": "01.01.2021",
+      "MontNScheduleId": 3,
+      "salary": 400
+    }
+  ],
+  "Activity": [
+    {
+      "id": 1,
+      "ActivityType": "OnWork"
+    },
+    {
+      "id": 2,
+      "ActivityType": "Vacation"
+    },
+    {
+      "id": 3,
+      "ActivityType": "Fired"
+    }
+  ],
+  "Cell": [
+    {
+      "id": 1,
+      "CellNumber": 1
+    },
+    {
+      "id": 2,
+      "CellNumber": 2
+    },
+    {
+      "id": 3,
+      "CellNumber": 3
+    },
+    {
+      "id": 4,
+      "CellNumber": 4
+    },
+    {
+      "id": 5,
+      "CellNumber": 5
+    }
+  ],
+  "Location": [
+    {
+      "id": 2,
+      "RowId": 1,
+      "CellId": 1,
+      "RackId": 2
+    },
+    {
+      "id": 3,
+      "RowId": 1,
+      "CellId": 1,
+      "RackId": 3
+    },
+    {
+      "id": 5,
+      "RowId": 4,
+      "CellId": 1,
+      "RackId": 5
+    },
+    {
+      "id": 7,
+      "RowId": 4,
+      "CellId": 2,
+      "RackId": 1
+    },
+    {
+      "id": 9,
+      "RowId": 4,
+      "CellId": 4,
+      "RackId": 4
+    }
+  ],
+  "Row": [
+    {
+      "id": 1,
+      "RowNumber": 1
+    },
+    {
+      "id": 2,
+      "RowNumber": 2
+    },
+    {
+      "id": 3,
+      "RowNumber": 3
+    },
+    {
+      "id": 4,
+      "RowNumber": 4
+    },
+    {
+      "id": 5,
+      "RowNumber": 5
+    },
+    {
+      "id": 6,
+      "RowNumber": 6
+    },
+    {
+      "id": 7,
+      "RowNumber": 7
+    },
+      {
+    "id": 8,
+    "RowNumber": 8
+  },
+    {
+    "id": 9,
+    "RowNumber": 9
+  },
+    {
+    "id": 10,
+    "RowNumber": 10
+  },
+    {
+    "id": 11,
+    "RowNumber": 11
+  },
+    {
+    "id": 12,
+    "RowNumber": 12
+  },
+     {
+    "id": 13,
+    "RowNumber": 13
+  },
+     {
+    "id": 14,
+    "RowNumber": 14
+  },
+     {
+    "id": 15,
+    "RowNumber": 15
+  },
+     {
+    "id": 16,
+    "RowNumber": 16
+  },
+     {
+    "id": 17,
+    "RowNumber": 17
+  },
+     {
+    "id": 18,
+    "RowNumber": 18
+  },
+     {
+    "id": 19,
+    "RowNumber": 19
+  },
+     {
+    "id": 20,
+    "RowNumber": 20
+  },
+     {
+    "id": 21,
+    "RowNumber": 21
+  },
+     {
+    "id": 22,
+    "RowNumber": 22
+  },
+     {
+    "id": 23,
+    "RowNumber": 23
+  },
+     {
+    "id": 24,
+    "RowNumber": 24
+  },
+     {
+    "id": 25,
+    "RowNumber": 25
+  },  
+   {
+    "id": 26,
+    "RowNumber": 26
+  },
+     {
+    "id": 27,
+    "RowNumber": 27
+  },
+     {
+    "id": 28,
+    "RowNumber": 28
+  },
+     {
+    "id": 29,
+    "RowNumber": 29
+  },
+     {
+    "id": 30,
+    "RowNumber": 30
+  },
+     {
+    "id": 31,
+    "RowNumber": 31
+  }
+  ],
+  "Rack": [
+    {
+      "id": 1,
+      "RackNumber": 1
+    },
+    {
+      "id": 2,
+      "RackNumber": 2
+    },
+    {
+      "id": 3,
+      "RackNumber": 3
+    },
+    {
+      "id": 4,
+      "RackNumber": 4
+    },
+    {
+      "id": 5,
+      "RackNumber": 5
+    }
+  ],
+  "MontNSchedule": [
+    {
+      "id": 1,
+      "DateOfWork": "01.01.2021",
+      "WorkStatusId": 1
+    },
+    {
+      "id": 2,
+      "DateOfWork": "02.01.2021",
+      "WorkStatusId": 1
+    },
+    {
+      "id": 3,
+      "DateOfWork": "03.01.2021",
+      "WorkStatusId": 2
+    }
+  ],
+  "Owner": [
+    {
+      "id": 1,
+      "NameOfOwner": "A",
+      "Adress": "Roet 115",
+      "AccountingDetails": 13456,
+      "OwnerContactsId": 3
+    },
+    {
+      "id": 2,
+      "NameOfOwner": "A",
+      "Adress": "Rowstreet 115",
+      "AccountingDetails": 12345611,
+      "OwnerContactsId": 1
+    },
+    {
+      "id": 3,
+      "NameOfOwner": "Aj",
+      "Adress": "Roet 115",
+      "AccountingDetails": 123456,
+      "OwnerContactsId": 3
+    }
+  ],
+  "OwnerContacts": [
+    {
+      "id": 1,
+      "Telephone": 123456,
+      "Email": "1@mail.com",
+      "OwnerId": 1
+    },
+    {
+      "id": 2,
+      "Telephone": 123457,
+      "Email": "2@mail.com",
+      "OwnerId": 2
+    },
+    {
+      "id": 3,
+      "Telephone": 123458,
+      "Email": "3@mail.com",
+      "OwnerId": 3
+    }
+  ],
+  "WorkStatus": [
+    {
+      "id": 1,
+      "WorkTimeId": 1,
+      "ActivityId": 1
+    },
+    {
+      "id": 2,
+      "WorkTimeId": 1,
+      "ActivityId": 2
+    },
+    {
+      "id": 3,
+      "WorkTimeId": 3,
+      "ActivityId": 1
+    },
+    {
+      "id": 4,
+      "WorkTimeId": 1,
+      "ActivityId": 2
+    },
+    {
+      "id": 5,
+      "WorkTimeId": 2,
+      "ActivityId": 2
+    },
+    {
+      "id": 6,
+      "WorkTimeId": 3,
+      "ActivityId": 2
+    }
+  ],
+  "WorkTime": [
+    {
+      "id": 1,
+      "Worktime": "00.00-08:00"
+    },
+    {
+      "id": 2,
+      "Worktime": "08.00-16:00"
+    },
+    {
+      "id": 3,
+      "Worktime": "16.00-00:00"
+    }
+  ]
+}

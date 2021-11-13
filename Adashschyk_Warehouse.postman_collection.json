@@ -1,0 +1,1601 @@
+{
+	"info": {
+		"_postman_id": "d8573f3a-a6b8-4295-8a2b-bae65e5c780b",
+		"name": "Adashschyk_Warehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Simple get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/goods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Simple get 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/typesOfGoods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"typesOfGoods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Simple get 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/storekeeper",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"storekeeper"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Simple get 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Simple get 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Cell",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Cell"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetID1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Cell?CellNumber=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Cell"
+							],
+							"query": [
+								{
+									"key": "CellNumber",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetID2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/goods?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goods"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetID3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/OwnerContacts?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"OwnerContacts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_page1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/OwnerContacts?_page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"OwnerContacts"
+							],
+							"query": [
+								{
+									"key": "_page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_page2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Row?_page=4&_limit=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Row"
+							],
+							"query": [
+								{
+									"key": "_page",
+									"value": "4"
+								},
+								{
+									"key": "_limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_page3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?_page=1&_limit=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "_page",
+									"value": "1"
+								},
+								{
+									"key": "_limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_sort1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?_sort=ActivityId&_order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "ActivityId"
+								},
+								{
+									"key": "_order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_sort2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?_sort=WorkTimeId&_order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "WorkTimeId"
+								},
+								{
+									"key": "_order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_sort3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/goods?_sort=OwnerId&_order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goods"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "OwnerId"
+								},
+								{
+									"key": "_order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_slice1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/goods?_start=2&_end=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goods"
+							],
+							"query": [
+								{
+									"key": "_start",
+									"value": "2"
+								},
+								{
+									"key": "_end",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_slice2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?_start=3&_end=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "_start",
+									"value": "3"
+								},
+								{
+									"key": "_end",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_slice3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?_start=2&_limit=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "_start",
+									"value": "2"
+								},
+								{
+									"key": "_limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_gte1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?WorkTimeId_gte=2&WorkTimeId_lte=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "WorkTimeId_gte",
+									"value": "2"
+								},
+								{
+									"key": "WorkTimeId_lte",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_gte2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?WorkTimeId_gte=2&WorkTimeId_lte=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "WorkTimeId_gte",
+									"value": "2"
+								},
+								{
+									"key": "WorkTimeId_lte",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_gte3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?WorkTimeId_gte=2&WorkTimeId_lte=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "WorkTimeId_gte",
+									"value": "2"
+								},
+								{
+									"key": "WorkTimeId_lte",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_gte4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Row?RowNumber_gte=10&RowNumber_lte=12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Row"
+							],
+							"query": [
+								{
+									"key": "RowNumber_gte",
+									"value": "10"
+								},
+								{
+									"key": "RowNumber_lte",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_gte5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location?CellId_gte=2&CellId_lte=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							],
+							"query": [
+								{
+									"key": "CellId_gte",
+									"value": "2"
+								},
+								{
+									"key": "CellId_lte",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_ne1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?WorkTimeId_ne=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "WorkTimeId_ne",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_ne2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus?WorkTimeId_ne=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus"
+							],
+							"query": [
+								{
+									"key": "WorkTimeId_ne",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_ne3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/storekeeper?NameOfStorekeeper_ne=B",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"storekeeper"
+							],
+							"query": [
+								{
+									"key": "NameOfStorekeeper_ne",
+									"value": "B"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_q1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/storekeeper?q=B",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"storekeeper"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "B"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_q2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/storekeeper?q=400",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"storekeeper"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "400"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_q3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Owner?q=Rowstreet_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Rowstreet_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_q4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Owner?q=Rowstreet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Rowstreet"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_q5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Owner?q=AC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "AC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_embed1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Row/1?_embed=Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Row",
+								"1"
+							],
+							"query": [
+								{
+									"key": "_embed",
+									"value": "Location"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_embed2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkTime/1?_embed=WorkStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkTime",
+								"1"
+							],
+							"query": [
+								{
+									"key": "_embed",
+									"value": "WorkStatus"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_embed3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus/1?_embed=MontNSchedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus",
+								"1"
+							],
+							"query": [
+								{
+									"key": "_embed",
+									"value": "MontNSchedule"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_embed4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/WorkStatus/2?_embed=MontNSchedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"WorkStatus",
+								"2"
+							],
+							"query": [
+								{
+									"key": "_embed",
+									"value": "MontNSchedule"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_embed5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Activity/2?_embed=WorkStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Activity",
+								"2"
+							],
+							"query": [
+								{
+									"key": "_embed",
+									"value": "WorkStatus"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Post1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 3,\r\n    \"ActivityType\": \"Fired\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Activity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Activity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 6,\r\n    \"RowNumber\": 6\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Row",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Row"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 7,\r\n    \"RowNumber\": 7\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Row",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Row"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 4,\r\n    \"RowId\": 4,\r\n    \"CellId\": 1,\r\n    \"RackId\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 5,\r\n    \"RowId\": 4,\r\n    \"CellId\": 1,\r\n    \"RackId\": 5\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 7,\r\n    \"RowId\": 4,\r\n    \"CellId\": 2,\r\n    \"RackId\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 8,\r\n    \"RowId\": 1,\r\n    \"CellId\": 1,\r\n    \"RackId\": 4\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 9,\r\n    \"RowId\": 4,\r\n    \"CellId\": 4,\r\n    \"RackId\": 4\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 10,\r\n    \"RowId\": 4,\r\n    \"CellId\": 2,\r\n    \"RackId\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 11,\r\n    \"RowId\": 4,\r\n    \"CellId\": 4,\r\n    \"RackId\": 4\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Delete1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Location/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Location",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 1,\r\n    \"NameOfOwner\": \"ABBA\",\r\n    \"Adress\": \"Rowstreet 1\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 1,\r\n    \"NameOfOwner\": \"ABBA\",\r\n    \"Adress\": \"Rowstreet 115\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 1,\r\n    \"NameOfOwner\": \"ABBA\",\r\n    \"Adress\": \"Rowstreet 115\",\r\n    \"AccountingDetails\": 10000,\r\n    \"OwnerContactsId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"ABBA\",\r\n    \"Adress\": \"Rowstreet 115\",\r\n    \"AccountingDetails\": 12346,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"A\",\r\n    \"Adress\": \"Rowstreet 115\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 4,\r\n    \"NameOfOwner\": \"A\",\r\n    \"Adress\": \"Rowstreet 115\",\r\n    \"AccountingDetails\": 12345611,\r\n    \"OwnerContactsId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"A\",\r\n    \"Adress\": \"Rowstreet 11ddd5\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"A\",\r\n    \"Adress\": \"Roet 115\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put9",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"Aj\",\r\n    \"Adress\": \"Roet 115\",\r\n    \"AccountingDetails\": 123456,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put10",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 3,\r\n    \"NameOfOwner\": \"A\",\r\n    \"Adress\": \"Roet 115\",\r\n    \"AccountingDetails\": 13456,\r\n    \"OwnerContactsId\": 3\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
